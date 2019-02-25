@@ -44,14 +44,45 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     padding: 3.5rem 0;
     border-bottom: 1px solid  #66697e; }
-  .header__nav-link {
+  @media (max-width: 660px) {
+    .header__nav {
+      display: none; } }
+  .header__nav-link, .header__adapt-nav-link {
     font-weight: 700;
     text-transform: uppercase;
     color: #fff;
     font-size: 1.3rem;
     margin-left: 5.9rem; }
+    .header__nav-link:first-child, .header__adapt-nav-link:first-child {
+      margin-left: 0; }
+  .header__menu-open {
+    display: none;
+    background: rgba(168, 163, 163, 0.8);
+    padding: 2rem;
+    border-radius: 3px; }
+    @media (max-width: 660px) {
+      .header__menu-open {
+        display: block; } }
+    .header__menu-open .fa {
+      font-size: 3rem; }
+  .header__adapt-nav {
+    height: 0;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+    padding-top: 2rem;
+    overflow: hidden;
+    transition: 0.4s; }
+    @media (max-width: 660px) {
+      .header__adapt-nav {
+        display: flex; } }
+    @media (max-width: 606px) {
+      .header__adapt-nav-link {
+        margin-left: 2rem;
+        line-height: 2.1rem; } }
 
 .intro {
   background-image: url(../img/intro-bg.png);

@@ -71,8 +71,15 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
         padding: 3.5rem 0;
         border-bottom: 1px solid  #66697e;
+    }
+
+    &__nav {
+        @media (max-width: 660px){
+            display: none;
+        }
     }
 
     &__nav-link {
@@ -81,8 +88,54 @@ body {
         color: #fff;
         font-size: 1.3rem;
         margin-left: 5.9rem;
+
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+
+    //adaptive menu
+
+    &__menu-open {
+        display: none;
+        background: rgba(168, 163, 163, 0.8);
+        padding: 2rem;
+        border-radius: 3px;
+
+        @media (max-width: 660px){
+            display: block;
+        }
+
+        .fa {
+            font-size: 3rem;
+        }
+    }
+
+    &__adapt-nav {
+        height: 0;
+        width: 80%;
+        margin: 0 auto;
+        justify-content: center;
+        padding-top: 2rem;
+        overflow: hidden;
+        transition: 0.4s;
+
+        @media (max-width: 660px){
+            display: flex;
+        }
+
+        &-link {
+            @extend .header__nav-link;
+
+            @media (max-width: 606px){
+                margin-left: 2rem;
+                line-height: 2.1rem;
+            }
+        }
     }
 }
+
+
 
 .intro {
     background-image: url(../img/intro-bg.png);
