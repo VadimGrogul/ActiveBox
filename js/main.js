@@ -7,7 +7,7 @@ console.log(a);
 
 adaptMenuBtn.addEventListener('click', function(){
     if(a == 0){
-        adaptMenu.style.height = 25 + 'px';
+        adaptMenu.style.height = 35 + 'px';
         a = 1;
     } else {
         adaptMenu.style.height = 0;

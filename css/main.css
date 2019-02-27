@@ -166,6 +166,12 @@ body {
       .works .works__item {
         width: 180px;
         margin-bottom: 20px; } }
+  @media (max-width: 400px) {
+    .works {
+      flex-direction: column;
+      align-items: center; }
+      .works .works__item {
+        width: 80%; } }
   .works__item {
     width: 24.945%;
     height: 30rem;
