@@ -112,17 +112,19 @@ body {
     }
 
     &__adapt-nav {
-        height: 0;
+        display: none;
         width: 80%;
         margin: 0 auto;
-        justify-content: center;
+        text-align: center;
+        // justify-content: center;
         padding-top: 2rem;
         overflow: hidden;
         transition: 0.4s;
 
-        @media (max-width: 660px){
-            display: flex;
-        }
+        // @media (max-width: 660px){
+        //     display: flex;
+        //     height: 0;
+        // }
 
         &-link {
             @extend .header__nav-link;

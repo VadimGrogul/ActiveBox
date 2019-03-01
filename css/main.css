@@ -69,16 +69,13 @@ body {
     .header__menu-open .fa {
       font-size: 3rem; }
   .header__adapt-nav {
-    height: 0;
+    display: none;
     width: 80%;
     margin: 0 auto;
-    justify-content: center;
+    text-align: center;
     padding-top: 2rem;
     overflow: hidden;
     transition: 0.4s; }
-    @media (max-width: 660px) {
-      .header__adapt-nav {
-        display: flex; } }
     @media (max-width: 606px) {
       .header__adapt-nav-link {
         margin-left: 2rem;
