@@ -13,7 +13,7 @@ let menu = $('.header__adapt-nav').attr('data-isOpen');
 
 $('.header__menu-open').click(() => {
     if(menu == 0) {
-        $('.header__adapt-nav').css({'height' : '25px', 'paddingTop' : '2rem'});
+        $('.header__adapt-nav').css({'height' : '30px', 'paddingTop' : '2rem'});
         menu = 1;
     } else {
         $('.header__adapt-nav').css({'height' : '0', 'paddingTop' : '0'});
