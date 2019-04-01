@@ -13,7 +13,7 @@ let menu = $('.header__adapt-nav').attr('data-isOpen');
 
 $('.header__menu-open').click(() => {
     if(menu == 0) {
-        $('.header__adapt-nav').css({'height' : '33px', 'paddingTop' : '2rem'});
+        $('.header__adapt-nav').css({'height' : '22px', 'paddingTop' : '2rem'});
         menu = 1;
     } else {
         $('.header__adapt-nav').css({'height' : '0', 'paddingTop' : '0'});
@@ -22,7 +22,7 @@ $('.header__menu-open').click(() => {
 })
 
 let currentImageIndex = 0;
-let images = ['./img/girl.png', './img/a.jpg', './img/b.jpg', './img/c.jpg', './img/d.jpg'];
+let images = ['./img/girl.png', './img/a.jpg', './img/b.jpg', './img/c.jpg'];
 let imgBlock = $('.clients__photo');
 
     for(let i = 0; i < images.length; i++) {
