@@ -15,7 +15,7 @@ $('.header__menu-open').click(() => {
     if(menu == 0) {
 
         $('.header__adapt-nav').css({'height' : '22px', 'paddingTop' : '2rem'});
-=======
+
         $('.header__adapt-nav').css({'height' : '35px', 'paddingTop' : '2rem'});
 
         menu = 1;
